@@ -7,10 +7,10 @@ namespace SausageStand
         static void Main(string[] args)
         {
 
-            int forsøg = 1;
+            int forsøg = 0;
 
-            while(forsøg < 2) { 
-
+            while(forsøg < 2) {
+                forsøg++;
             Console.WriteLine("Velkommen til pølseboden");
 
             double pølse = 18.50;
@@ -71,7 +71,7 @@ namespace SausageStand
                     Environment.Exit(0);
                 }else if (svar == "j")
                 {
-                    Console.WriteLine("Dette er forsøg nummer {0}", forsøg);
+                    Console.WriteLine("Dette var forsøg nummer {0}", forsøg);
                     
                 }
 
