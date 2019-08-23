@@ -26,7 +26,7 @@ namespace SausageStand
 
             //Beregning
             
-            while(pølseantal > 50 || brødantal > 50) {
+            while(pølseantal > 50 || brødantal > 50 || pølseantal < 0 || brødantal < 0) {
 
                 Console.WriteLine("Du må højst købe 50 pølser eller brød");
                 Console.WriteLine("Hvor mange pølser vil du købe?");
@@ -36,8 +36,10 @@ namespace SausageStand
                 Console.WriteLine("Hvor mange brød vil du købe?");
 
                 brødantal = Convert.ToInt16(Console.ReadLine());
+
                 
-            }
+
+                }
             
 
             Console.WriteLine("Hvad betaler du i kontant?");
